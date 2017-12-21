@@ -1,0 +1,15 @@
+{
+  "name": "自动填写",
+  "manifest_version": 3,
+  "version": "1.0",
+  "description": "问卷调查自动填写",
+  "browser_action": {
+    "default_icon": "1.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://wj.qq.com/s/*"],
+      "js": ["run.js"]
+    }
+  ]
+}
